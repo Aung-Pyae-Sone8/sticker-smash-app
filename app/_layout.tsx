@@ -8,7 +8,7 @@ LogBox.ignoreAllLogs(true);
 export default function RootLayout() {
   return (
     <>
-    <StatusBar style="light" />
+    <StatusBar style="dark" />
       <Stack>
       <Stack.Screen 
       name="(tabs)" 

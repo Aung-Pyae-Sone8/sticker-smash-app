@@ -1,1 +1,2 @@
 npm run rest-project
+npx expo install expo-image
