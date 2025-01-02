@@ -2,13 +2,14 @@ import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { LogBox } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 LogBox.ignoreAllLogs(true);
 
 export default function RootLayout() {
   return (
-    <>
-    <StatusBar style="dark" />
+    <GestureHandlerRootView style={{flex: 1}}>
+    <StatusBar style="light" />
       <Stack>
       <Stack.Screen 
       name="(tabs)" 
@@ -25,6 +26,6 @@ export default function RootLayout() {
       }}
       />
     </Stack>
-    </>
+    </GestureHandlerRootView>
   );
 }
